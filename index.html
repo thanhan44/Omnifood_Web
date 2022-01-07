@@ -12,21 +12,23 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive1.css">
+    <!-- <link rel="stylesheet" href="./assets/css/responsive2.css"> -->
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <title>Document</title>
+    <title>Omnifood</title>
 </head>
 
 <body>
     <div class="app">
-        <header class="header">
-            <nav class="header__nav">
-                <a href="" class="header__nav-logo-link">
-                    <img class="header__nav-logo-img" src="./assets/img/omnifood-logo.png" alt="Omnifood logo">
-                </a>
+        <header class="header ">
+            <a href="" class="header__nav-logo-link">
+                <img class="header__nav-logo-img" src="./assets/img/omnifood-logo.png" alt="Omnifood logo">
+            </a>
 
+            <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
                         <a href="" class="header__nav-link">How it works</a>
@@ -45,13 +47,18 @@
                     </li>
                 </ul>
             </nav>
+
+            <button class="btn-mobile-nav">
+                <ion-icon class="btn-mobile__icon btn-mobile__icon--menu" name="menu-outline"></ion-icon>
+                <ion-icon class="btn-mobile__icon btn-mobile__icon--close" name="close-outline"></ion-icon>
+            </button>
         </header>
 
         <main class="app_container">
             <section class="section-hero">
                 <div class="grid wide">
                     <div class="row big-gutter">
-                        <div class="col l-6">
+                        <div class="col l-6 m-12">
                             <h1 class="hero-heading">
                                 A healthy meal delivered to your door, every single day
                             </h1>
@@ -81,7 +88,7 @@
 
 
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-12">
                             <img class="hero-img" src="./assets/img/hero.png" alt="">
                         </div>
                     </div>
@@ -108,7 +115,7 @@
                         <h2 class="how__heading">Your daily dose of health in 3 simple steps</h2>
                     </div>
                     <div class="row big-gutter margin-bottom-lg">
-                        <div class="col l-6">
+                        <div class="col l-6 m-6">
                             <p class="how__step-number">01</p>
                             <h3 class="how__step-heading">Tell us what you like (and what not)</h3>
                             <p class="how__step-description">
@@ -118,19 +125,19 @@
                                 matter what diet you follow!
                             </p>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-6">
                             <div class="how__step-box-img">
                                 <img src="./assets/img/step_app/app-screen-1.png" alt="" class="how__step-img">
                             </div>
                         </div>
                     </div>
                     <div class="row big-gutter margin-bottom-lg">
-                        <div class="col l-6">
+                        <div class="col l-6 m-6 display-mobile">
                             <div class="how__step-box-img">
                                 <img src="./assets/img/step_app/app-screen-2.png" alt="" class="how__step-img">
                             </div>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-6">
                             <p class="how__step-number">02</p>
                             <h3 class="how__step-heading">Approve your weekly meal plan</h3>
                             <p class="how__step-description">
@@ -139,9 +146,14 @@
                                 your own recipes.
                             </p>
                         </div>
+                        <div class="col l-6 m-6 display-mobile">
+                            <div class="how__step-box-img">
+                                <img src="./assets/img/step_app/app-screen-2.png" alt="" class="how__step-img">
+                            </div>
+                        </div>
                     </div>
                     <div class="row big-gutter margin-bottom-lg">
-                        <div class="col l-6">
+                        <div class="col l-6 m-6">
                             <p class="how__step-number">03</p>
                             <h3 class="how__step-heading">Receive meals at convenient time</h3>
                             <p class="how__step-description">
@@ -150,7 +162,7 @@
                                 change delivery schedule and address daily!
                             </p>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-6">
                             <div class="how__step-box-img">
                                 <img src="./assets/img/step_app/app-screen-1.png" alt="" class="how__step-img">
                             </div>
@@ -166,7 +178,7 @@
                         <h2 class="meals__heading">Omnifood AI chooses from 5,000+ recipes</h2>
                     </div>
                     <div class="row big-gutter">
-                        <div class="col l-4">
+                        <div class="col l-4 m-4 c-6">
                             <div class="meals-content">
                                 <img src="./assets/img/meals/meal-1.jpg" alt="" class="meals__product-img">
                                 <div class="meals__product">
@@ -229,7 +241,7 @@
                             </div>
                         </div>
 
-                        <div class="col l-4">
+                        <div class="col l-4 m-4 c-6">
                             <div class="meals-content">
                                 <img src="./assets/img/meals/meal-2.jpg" alt="" class="meals__product-img">
                                 <div class="meals__product">
@@ -293,7 +305,7 @@
                             </div>
                         </div>
 
-                        <div class="col l-4">
+                        <div class="col l-4 m-4 c-12">
                             <div class="meals__diet">
                                 <h3 class="meals__diet-heading">Works with any diet:</h3>
                                 <ul class="meals__diet-list">
@@ -408,7 +420,7 @@
                                     <h2 class="testimonials__heading">Once you try it, you can't go back</h2>
                                 </div>
                                 <div class="row big-gutter">
-                                    <div class="col l-6 margin-bottom-lg">
+                                    <div class="col l-6 m-6 margin-bottom-lg">
                                         <img src="./assets/img/customers/dave.jpg" alt=""
                                             class="testimonials__costumer-img">
                                         <blockquote class="testimonials__costumer-text">
@@ -417,7 +429,7 @@
                                         </blockquote>
                                         <p class="testimonials__costumer-name">&mdash; Dave Bryson</p>
                                     </div>
-                                    <div class="col l-6 margin-bottom-lg">
+                                    <div class="col l-6 m-6 margin-bottom-lg">
                                         <img src="./assets/img/customers/ben.jpg" alt=""
                                             class="testimonials__costumer-img">
                                         <blockquote class="testimonials__costumer-text">
@@ -426,7 +438,7 @@
                                         </blockquote>
                                         <p class="testimonials__costumer-name">&mdash; Ben Hadley</p>
                                     </div>
-                                    <div class="col l-6 margin-bottom-lg">
+                                    <div class="col l-6 m-6 margin-bottom-lg">
                                         <img src="./assets/img/customers/steve.jpg" alt=""
                                             class="testimonials__costumer-img">
                                         <blockquote class="testimonials__costumer-text">
@@ -435,7 +447,7 @@
                                         </blockquote>
                                         <p class="testimonials__costumer-name">&mdash; Steve Miller</p>
                                     </div>
-                                    <div class="col l-6 margin-bottom-lg">
+                                    <div class="col l-6 m-6 margin-bottom-lg">
                                         <img src="./assets/img/customers/hannah.jpg" alt=""
                                             class="testimonials__costumer-img">
                                         <blockquote class="testimonials__costumer-text">
@@ -450,73 +462,73 @@
 
                         <div class="col l-5">
                             <div class="row">
-                                <div class="col l-4 margin-top-bottom ">
+                                <div class="col l-4 c-3 margin-top-bottom ">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-1.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-2.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-3.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-4.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-5.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-6.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-7.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-8.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-9.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-10.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-11.jpg" alt=""
                                             class="testimonials__img-gallery">
                                     </div>
                                 </div>
-                                <div class="col l-4 margin-top-bottom over--hidden">
+                                <div class="col l-4 c-3 margin-top-bottom over--hidden">
                                     <div class="over--hidden">
                                         <img src="./assets/img/gallery/gallery-12.jpg" alt=""
                                             class="testimonials__img-gallery">
@@ -535,7 +547,7 @@
                         <h2 class="pricing__heading">Eating well without breaking the bank</h2>
                     </div>
 
-                    <div class="row big-gutter">
+                    <div class="row big-gutter pricing-plan--justify">
                         <div class="col l-6">
                             <div class="pricing-plan pricing-plan--starter">
                                 <div class="pricing-plan__header">
@@ -653,7 +665,7 @@
                         Both plans include the following:</p>
 
                     <div class="row">
-                        <div class="col l-3">
+                        <div class="col l-3 m-3 c-6">
                             <div class="pricing-feture">
                                 <ion-icon class="pricing-feture__icon" name="infinite-outline"></ion-icon>
                                 <h3 class="pricing-feture__heading">Never cook again!</h3>
@@ -662,7 +674,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-3 c-6">
                             <div class="pricing-feture">
                                 <ion-icon class="pricing-feture__icon" name="nutrition-outline"></ion-icon>
                                 <h3 class="pricing-feture__heading">Local and organic</h3>
@@ -671,7 +683,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-3 c-6">
                             <div class="pricing-feture">
                                 <ion-icon class="pricing-feture__icon" name="leaf-outline"></ion-icon>
                                 <h3 class="pricing-feture__heading">No waste</h3>
@@ -680,7 +692,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-3 c-6">
                             <div class="pricing-feture">
                                 <ion-icon class="pricing-feture__icon" name="pause-outline"></ion-icon>
                                 <h3 class="pricing-feture__heading">Pause anytime</h3>
@@ -695,7 +707,11 @@
             <section class="section-cta">
                 <div class="grid wide">
                     <div class="row cta-container">
-                        <div class="col l-8">
+                        <div class="l-4 m-5 c-12 display-mobile">
+                            <div class="cta__img"></div>
+                        </div>
+
+                        <div class="col l-8 m-7 c-12">
                             <div class="cta__content">
                                 <h2 class="cta__heading">Get your first meal for free!</h2>
                                 <p class="cta__text">
@@ -705,19 +721,19 @@
 
 
                                 <form action="" class="cta__form row">
-                                    <div class="cta__form-item col l-6">
+                                    <div class="cta__form-item col l-6 m-12 c-12">
                                         <label for="cta__fullname">Full name</label>
                                         <input id="full-name" type="text" placeholder="John Smith" name="full-name"
                                             required>
                                     </div>
 
-                                    <div class="cta__form-item col l-6">
+                                    <div class="cta__form-item col l-6 m-12 c-12">
                                         <label for="cta__email">Email address</label>
                                         <input id="email" type="email" placeholder="me@example.com" name="email"
                                             required>
                                     </div>
 
-                                    <div class="cta__form-item col l-6">
+                                    <div class="cta__form-item col l-6 m-12 c-12">
                                         <label for="select-where">Where did you hear from us?</label>
                                         <select id="cta__where">
                                             <option value="">Please choose one option:</option>
@@ -729,13 +745,14 @@
                                         </select>
                                     </div>
 
-                                    <div class="cta__form-item col l-6">
+                                    <div class="cta__form-item col l-6 m-12 c-12">
                                         <button class="btn btn--form">Sign up now</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="l-4">
+
+                        <div class="l-4 m-5 c-12 display-mobile">
                             <div class="cta__img"></div>
                         </div>
                     </div>
@@ -746,7 +763,7 @@
         <footer class="footer">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 c-6">
                         <a href="" class="footer__logo-link">
                             <img src="./assets/img/omnifood-logo.png" alt="" class="footer__logo-img-link">
                         </a>
@@ -767,7 +784,7 @@
                         </p>
                     </div>
 
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 c-6">
                         <h3 class="footer__heading">Contact us</h3>
                         <p class="footer__address">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
                         <p class="footer-link">
@@ -777,7 +794,7 @@
                         </p>
                     </div>
 
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 c-6">
                         <h3 class="footer__heading">Account</h3>
                         <ul class="footer__list-link">
                             <li class="footer__item-link">
@@ -795,7 +812,7 @@
                         </ul>
                     </div>
 
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 c-6">
                         <h3 class="footer__heading">Company</h3>
                         <ul class="footer__list-link">
                             <li class="footer__item-link">
@@ -813,7 +830,7 @@
                         </ul>
                     </div>
 
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 c-6">
                         <h3 class="footer__heading">Resources</h3>
                         <ul class="footer__list-link">
                             <li class="footer__item-link">
