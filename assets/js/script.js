@@ -83,7 +83,7 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
+  // console.log(isSupported);
 
   //add class no-flexbox-gap into where is needed to fix on Safari
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
