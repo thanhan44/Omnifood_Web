@@ -18,32 +18,36 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <!-- Smooth -->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+
     <title>Omnifood</title>
 </head>
 
 <body>
     <div class="app">
-        <header class="header ">
-            <a href="" class="header__nav-logo-link">
+        <header class="header">
+            <a href="#" class="header__nav-logo-link">
                 <img class="header__nav-logo-img" src="./assets/img/omnifood-logo.png" alt="Omnifood logo">
             </a>
 
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a href="" class="header__nav-link">How it works</a>
+                        <a href="#how" class="header__nav-link">How it works</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Meals</a>
+                        <a href="#meals" class="header__nav-link">Meals</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Testimonials</a>
+                        <a href="#testimonials" class="header__nav-link">Testimonials</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="" class="header__nav-link">Pricing</a>
+                        <a href="#pricing" class="header__nav-link">Pricing</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="" class="header__nav-link header__nav-cta ">Try for free</a>
+                        <a href="#cta" class="header__nav-link header__nav-cta ">Try for free</a>
                     </li>
                 </ul>
             </nav>
@@ -68,8 +72,8 @@
                                 nutritional needs.
                             </p>
 
-                            <a class="btn btn--primary margin-right-sm" href="">Start eating well</a>
-                            <a class="btn btn--outline" href="">Learn more &darr;</a>
+                            <a class="btn btn--primary margin-right-sm" href="#cta">Start eating well</a>
+                            <a class="btn btn--outline" href="#how">Learn more &darr;</a>
 
                             <div class="hero-customer">
                                 <div class="hero-customer-imgs">
@@ -108,7 +112,7 @@
                 </div>
             </section>
 
-            <section class="section-how">
+            <section class="section-how" id="how">
                 <div class="grid wide">
                     <div class="how__header">
                         <span class="how__subheading">How it works</span>
@@ -171,7 +175,7 @@
                 </div>
             </section>
 
-            <section class="section-meals">
+            <section class="section-meals" id="meals">
                 <div class="grid wide">
                     <div class="meals__header">
                         <span class="meals__subheading">Meals</span>
@@ -410,7 +414,7 @@
                 </div>
             </section>
 
-            <section class="section-testimonials">
+            <section class="section-testimonials" id="testimonials">
                 <div class="grid testimonials">
                     <div class="row">
                         <div class="col l-7">
@@ -540,7 +544,7 @@
                 </div>
             </section>
 
-            <section class="section-pricing">
+            <section class="section-pricing" id="pricing">
                 <div class="grid wide">
                     <div class="pricing__header">
                         <span class="pricing__subheading">Pricing</span>
@@ -704,7 +708,7 @@
                     </div>
             </section>
 
-            <section class="section-cta">
+            <section class="section-cta" id="cta">
                 <div class="grid wide">
                     <div class="row cta-container">
                         <div class="l-4 m-5 c-12 display-mobile">
@@ -764,7 +768,7 @@
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-2-4 c-6">
-                        <a href="" class="footer__logo-link">
+                        <a href="#" class="footer__logo-link">
                             <img src="./assets/img/omnifood-logo.png" alt="" class="footer__logo-img-link">
                         </a>
                         <ul class="footer__list-icon">
@@ -779,7 +783,7 @@
                             </li>
                         </ul>
                         <p class="footer__copyright">
-                            Copyright &copy; <span>2027</span> by Omnifood, Inc.
+                            Copyright &copy; <span class="year">2021</span> by Omnifood, Inc.
                             All rights reserved.
                         </p>
                     </div>
